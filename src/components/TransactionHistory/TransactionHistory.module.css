@@ -1,0 +1,26 @@
+.tableOver {
+    border-collapse: collapse;
+    width: 500px;
+    border: 2px solid #fff;
+    margin: 0 auto;
+}
+.tableItem {
+    border: 2px solid black;
+    text-align: left;
+    padding: 8px;
+    text-align: center;
+}
+.tableHeaderItem {
+    border: 2px solid black;
+}
+.tableHeader {
+    border: 2px solid black;
+    text-align: left;
+    padding: 8px;
+    color: #fff;
+    background-color: #2a2a2a;
+    text-align: center;
+}
+.dark {
+    background-color: silver;
+}
