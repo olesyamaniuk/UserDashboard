@@ -13,8 +13,8 @@ export default function TransactionHistory({items}) {
         </thead>
       
         <tbody>
-        {items.map(({id, type, amount, currency}, index) =>(
-        <tr key ={id} className={clsx(css.tableItem, {[css.dark]: index % 2 === 1})}>
+        {items.map(({id, type, amount, currency}) =>(
+        <tr key ={id} className={clsx(css.tableItem)}>
             <td className={css.tableHeaderItem}>{type}</td>
             <td className={css.tableHeaderItem}>{amount}</td>
             <td className={css.tableHeaderItem}>{currency}</td>

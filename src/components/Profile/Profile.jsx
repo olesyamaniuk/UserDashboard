@@ -1,31 +1,25 @@
-import css from "./Profile.module.css"
-export default function Profile({name, tag, location, image, stats}) {
-    return (
-      <div className={css.profileBlock}>
-      <div>
-        <img className={css.icon}
-          src= {image}
-          alt="User avatar"
-        />
+import css from "./Profile.module.css";
+
+export default function Profile({ name, tag, location, image, stats }) {
+  return (
+    <div className={css.profileBlock}>
+      <div className={css.desc}>
+        <img className={css.icon} src={image} alt="User avatar" />
         <p className={css.textName}>{name}</p>
         <p className={css.textProf}>@{tag}</p>
         <p className={css.textProf}>{location}</p>
       </div>
-    
+
       <ul className={css.listItem}>
-        <li className={css.item}>
-          <span>Followers</span>
-          <span>{stats.followers}</span>
-        </li>
-        <li className={css.item}>
-          <span>Views</span>
-          <span>{stats.views}</span>
-        </li>
-        <li className={css.item}>
-          <span>Likes</span>
-          <span>{stats.likes}</span>
-        </li>
+        {Object.entries(stats).map(([key, value]) => (
+          <li key={key} className={css.item}>
+            <span className={css.itemName}>
+              {key.charAt(0).toUpperCase() + key.slice(1)}
+            </span>
+            <span className={css.itemQuantity}>{value}</span>
+          </li>
+        ))}
       </ul>
     </div>
-    )
-  }
+  );
+}

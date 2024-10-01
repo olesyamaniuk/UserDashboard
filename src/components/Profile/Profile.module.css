@@ -1,40 +1,71 @@
 .profileBlock {
-    margin: 0 auto;
-    display: block;
-    text-align: center;
-    width: 300px;
-    height: 100%;
-    border-radius: 4px;
-    border: 1px solid var(--LIGHT-SLATE, #1c1c1c);
-    background-color: aliceblue;
+  width: 340px;
+  margin: 0 auto;
+  padding: 70px 50px;
+  background-color: #77deb2;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
-    .textName {
-    margin: 10px 0 10px 0;
-    font-size: 20px;
-    font-weight: 700;
-}
-.textProf {
-    margin: 0 0 10px 0;
-    font-size: 18px;
-    color: #9b9b9b;
+.desc {
+  width: 240px;
+  height: 220px;
+  margin: 0 auto;
+  padding: 30px;
+  background-color: #ffffff;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 .icon {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    border: 1px solid var(--LIGHT-SLATE, #1c1c1c);
-    background-color: #1c1c1c;
-    }
+  width: 100px;
+  display: block;
+  margin: 0 auto 20px;
+  border-radius: 50%;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+.textName {
+  text-align: center;
+  font-weight: 700;
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+.textProf {
+  text-align: center;
+  color: darkgrey;
+  margin-bottom: 10px;
+}
+
 .listItem {
-    display: flex;
-    justify-content: space-between;
-    padding: 0;
-    margin: 0;
-    background-color: #9b9b9b;
+  width: 301px;
+  height: 100px;
+  background-color: #6ad3a5;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  list-style-type: none;
 }
 .item {
-    border: 1px solid var(--LIGHT-SLATE, #8e8f99);
-    width: 100px;
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  text-align: center;
+}
+
+.itemName {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+.itemQuantity {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 18px;
 }
